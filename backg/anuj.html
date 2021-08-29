@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        // var a=16;
+        // if(a>18) {
+        //     alert("Vailid For Vote");
+        // } else {
+        //     alert("Not Vailid");
+        // }
+
+        function check() {
+
+            var ag= document.getElementById("age").value;
+            var nm= document.getElementById("name").value;
+//alert(nm.length);
+            if(ag==""){
+                 alert("cant be blank Age Fields");
+                 return false;
+            } else if(nm=="")
+           {
+            alert("cant be blank Name Fields");
+                 return false;
+           } 
+           else if(nm.length < 3)
+           {
+            alert("Use minimum 3 Charactor in name ");
+                 return false;
+           }
+           else {
+               alert("Sucess");
+           }
+         
+           
+           //console.log("Check Button clicked"+ age);
+        }
+    </script>
+</head>
+<body>
+
+    <Form>
+       Age <input type="text" name="a" id="age" />
+        Name <input type="text" name="a" id="name" />
+       
+        <input type="button" value="Check" onclick="check();" />
+    </Form>
+    
+</body>
+</html>
+   

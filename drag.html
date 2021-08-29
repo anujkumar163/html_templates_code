@@ -1,0 +1,14 @@
+<h1>Getting server update</h1>
+<div id="result'></div>
+<script>
+if(type(EventSource0 !== "undefined") {
+  var source = new EventSource("demo_sse.php);
+  source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + ",br>';
+   };
+  } else {
+    document.getelementById9"result").innerHTML = "sorry, you brower does not 
+support server-sent event..";
+</script>
+</body>
+</html>
